@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>MyCompanents</members>
+        <members>MyCompanentsForLaw</members>
+        <members>PickListValues</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>*</members>
-        <name>CustomFields</name>
+        <members>PickListController</members>
+        <name>ApexClasses</name>
     </types>
-     <types>
+    <types>
+        <members>Bank</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>*</members>
+        <name>CustomApplicationComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>BankAccount__c</members>
+        <members>Bank__c</members>
+        <members>Card__c</members>
+        <members>Contact</members>
+        <members>Merchant__c</members>
+        <members>Transaction__c</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Account-en_US</members>
+        <members>BankAccount__c-en_US</members>
+        <members>Bank__c-en_US</members>
+        <members>Card__c-en_US</members>
+        <members>Merchant__c-en_US</members>
+        <members>Transaction__c-en_US</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>BankAccount__c</members>
+        <members>Bank__c</members>
+        <members>Card__c</members>
+        <members>Merchant__c</members>
+        <members>Transaction__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Bank_UtilityBar</members>
+        <members>Customer_Record_Page</members>
+        <members>Law</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>HomePageComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>Account-Individual</members>
+        <members>Account-Law</members>
+        <members>BankAccount__c-Credit</members>
+        <members>BankAccount__c-Debit</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Letterhead</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Scontrol</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Bank__c</members>
+        <members>Card__c</members>
+        <members>Contact</members>
+        <members>Merchant__c</members>
+        <members>Transaction__c</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>Account.*</members>
+        <name>SharingTerritoryRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
     </types>
     <version>43.0</version>
 </Package>

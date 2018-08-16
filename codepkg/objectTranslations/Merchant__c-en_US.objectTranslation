@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Merchant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Merchants</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description of the problem --></label>
+        <name>Description_of_the_problem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires verification? --></label>
+        <name>equires_verification__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

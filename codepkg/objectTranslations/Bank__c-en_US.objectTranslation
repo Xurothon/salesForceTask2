@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bank</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Banks</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountNumber --></label>
+        <name>AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName --></label>
+        <name>LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- TypeClientAccount --></label>
+        <name>TypeClientAccount__c</name>
+        <picklistValues>
+            <masterLabel>Debit</masterLabel>
+            <translation><!-- Debit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Сredit</masterLabel>
+            <translation><!-- Сredit --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

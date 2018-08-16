@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Card</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cards</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bank Account --></label>
+        <name>Bank_Account__c</name>
+        <relationshipLabel><!-- Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Сard Number --></label>
+        <name>CardNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active? --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
