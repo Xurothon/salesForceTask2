@@ -153,6 +153,15 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Difference_between_debit_and_credit__c</fullName>
+        <externalId>false</externalId>
+        <label>Difference between debit and credit</label>
+        <summarizedField>BankAccount__c.testmo__c</summarizedField>
+        <summaryForeignKey>BankAccount__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>DunsNumber</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -286,6 +295,34 @@
     <fields>
         <fullName>Site</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Sum_of_credit__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum of credit</label>
+        <summarizedField>BankAccount__c.testmo__c</summarizedField>
+        <summaryFilterItems>
+            <field>BankAccount__c.testmo__c</field>
+            <operation>lessThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>BankAccount__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Sum_of_debit__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum of debit</label>
+        <summarizedField>BankAccount__c.testmo__c</summarizedField>
+        <summaryFilterItems>
+            <field>BankAccount__c.testmo__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>BankAccount__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
     </fields>
     <fields>
         <fullName>TickerSymbol</fullName>

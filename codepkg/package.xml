@@ -7,10 +7,6 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>PickListController</members>
-        <name>ApexClasses</name>
-    </types>
-    <types>
         <members>Bank</members>
         <name>CustomApplication</name>
     </types>

@@ -65,6 +65,16 @@
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
+        <fullName>Amount_of_money__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount of money</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>BankAccountNumber__c</fullName>
         <externalId>true</externalId>
         <label>BankAccountNumber</label>
@@ -74,6 +84,44 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Debt_in_a_month__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Amount_of_money__c / 12)*1.1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Debt in a month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interest_in_a_month__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Amount_of_money__c/12)*0.05</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interest in a month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sum_of_credit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Sum_of_credit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sum of credit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Type_Bank_Account__c</fullName>
@@ -98,6 +146,19 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>testmo__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Type_Bank_Account__c, &quot;debit&quot;) ,Amount_of_money__c, Amount_of_money__c*(-1))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>testmo</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <label>Bank Account</label>
     <listViews>

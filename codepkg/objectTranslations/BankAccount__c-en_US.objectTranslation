@@ -14,8 +14,24 @@
         <relationshipLabel><!-- Bank Accounts --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Amount of money --></label>
+        <name>Amount_of_money__c</name>
+    </fields>
+    <fields>
         <label><!-- BankAccountNumber --></label>
         <name>BankAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt in a month --></label>
+        <name>Debt_in_a_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest in a month --></label>
+        <name>Interest_in_a_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum of credit --></label>
+        <name>Sum_of_credit__c</name>
     </fields>
     <fields>
         <label><!-- Type Bank Account --></label>
@@ -28,6 +44,10 @@
             <masterLabel>debit</masterLabel>
             <translation><!-- debit --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- testmo --></label>
+        <name>testmo__c</name>
     </fields>
     <layouts>
         <layout>Credit</layout>

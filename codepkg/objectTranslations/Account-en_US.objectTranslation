@@ -37,6 +37,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Difference between debit and credit --></label>
+        <name>Difference_between_debit_and_credit__c</name>
+    </fields>
+    <fields>
         <label><!-- Number of Locations --></label>
         <name>NumberofLocations__c</name>
     </fields>
@@ -67,6 +71,14 @@
             <masterLabel>Silver</masterLabel>
             <translation><!-- Silver --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sum of credit --></label>
+        <name>Sum_of_credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum of debit --></label>
+        <name>Sum_of_debit__c</name>
     </fields>
     <fields>
         <label><!-- Type Account --></label>
