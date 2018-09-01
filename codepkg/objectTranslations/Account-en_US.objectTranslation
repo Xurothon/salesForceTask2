@@ -73,6 +73,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- SumTransactionMonth --></label>
+        <name>SumTransactionMonth__c</name>
+    </fields>
+    <fields>
         <label><!-- Sum of credit --></label>
         <name>Sum_of_credit__c</name>
     </fields>

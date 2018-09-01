@@ -35,6 +35,10 @@
                 <behavior>Readonly</behavior>
                 <field>Sum_of_debit__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>SumTransactionMonth__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -402,6 +406,10 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>BankAccount__c.Account__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Transaction__c.Customer__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

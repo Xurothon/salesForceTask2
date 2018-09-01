@@ -297,6 +297,20 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>SumTransactionMonth__c</fullName>
+        <externalId>false</externalId>
+        <label>SumTransactionMonth</label>
+        <summarizedField>Transaction__c.moneySign__c</summarizedField>
+        <summaryFilterItems>
+            <field>Transaction__c.CheckDateText__c</field>
+            <operation>equals</operation>
+            <value>yes</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Transaction__c.Customer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>Sum_of_credit__c</fullName>
         <externalId>false</externalId>
         <label>Sum of credit</label>

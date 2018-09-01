@@ -77,15 +77,49 @@
     </fields>
     <fields>
         <fullName>Card__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
+        <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
         <label>Card</label>
         <referenceTo>Card__c</referenceTo>
         <relationshipLabel>Transactions</relationshipLabel>
         <relationshipName>Transactions</relationshipName>
-        <required>false</required>
+        <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CheckDateText__c</fullName>
+        <externalId>false</externalId>
+        <label>CheckDateText</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CheckDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( MONTH(  DATEVALUE(CreatedDate) )  =  MONTH( TODAY() )  , &quot;yes&quot;, &quot;no&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CheckDate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Transactions</relationshipLabel>
+        <relationshipName>Transactions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
         <fullName>Merchant__c</fullName>
@@ -95,7 +129,7 @@
         <referenceTo>Merchant__c</referenceTo>
         <relationshipLabel>Transactions</relationshipLabel>
         <relationshipName>Transactions1</relationshipName>
-        <required>true</required>
+        <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -122,22 +156,30 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>money transfer</fullName>
+                    <fullName>write-off of money</fullName>
                     <default>true</default>
-                    <label>money transfer</label>
+                    <label>write-off of money</label>
                 </value>
                 <value>
-                    <fullName>refill/debit</fullName>
+                    <fullName>replenishment of money</fullName>
                     <default>false</default>
-                    <label>refill/debit</label>
-                </value>
-                <value>
-                    <fullName>card transaction (refill/debit)</fullName>
-                    <default>false</default>
-                    <label>card transaction (refill/debit)</label>
+                    <label>replenishment of money</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>moneySign__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Transaction_Type__c , &quot;write-off of money&quot;) , Amount__c *(-1),  Amount__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>moneySign</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <label>Transaction</label>
     <listViews>
@@ -151,12 +193,12 @@
     </nameField>
     <pluralLabel>Transactions</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>CheckTransactionType</fullName>
         <active>true</active>
-        <errorConditionFormula>AND(!ISNULL(Card__c), ISPICKVAL(Transaction_Type__c, &apos;card transaction (refill/debit)&apos;))</errorConditionFormula>
-        <errorMessage>Please, choose card!</errorMessage>
+        <errorConditionFormula>Merchant__c = null  &amp;&amp; ISPICKVAL(Transaction_Type__c, &apos;write-off of money&apos;)</errorConditionFormula>
+        <errorMessage>Please, choose Merchant!</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

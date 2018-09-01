@@ -23,6 +23,19 @@
         <relationshipLabel><!-- Transactions --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- CheckDateText --></label>
+        <name>CheckDateText__c</name>
+    </fields>
+    <fields>
+        <label><!-- CheckDate --></label>
+        <name>CheckDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Merchant --></label>
         <name>Merchant__c</name>
         <relationshipLabel><!-- Transactions --></relationshipLabel>
@@ -35,21 +48,21 @@
         <label><!-- Transaction Type --></label>
         <name>Transaction_Type__c</name>
         <picklistValues>
-            <masterLabel>card transaction (refill/debit)</masterLabel>
-            <translation><!-- card transaction (refill/debit) --></translation>
+            <masterLabel>replenishment of money</masterLabel>
+            <translation><!-- replenishment of money --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>money transfer</masterLabel>
-            <translation><!-- money transfer --></translation>
+            <masterLabel>write-off of money</masterLabel>
+            <translation><!-- write-off of money --></translation>
         </picklistValues>
-        <picklistValues>
-            <masterLabel>refill/debit</masterLabel>
-            <translation><!-- refill/debit --></translation>
-        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- moneySign --></label>
+        <name>moneySign__c</name>
     </fields>
     <startsWith>Consonant</startsWith>
     <validationRules>
-        <errorMessage><!-- Please, choose card! --></errorMessage>
+        <errorMessage><!-- Please, choose Merchant! --></errorMessage>
         <name>CheckTransactionType</name>
     </validationRules>
 </CustomObjectTranslation>
