@@ -60,6 +60,13 @@
         <label><!-- moneySign --></label>
         <name>moneySign__c</name>
     </fields>
+    <layouts>
+        <layout>Transaction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- Please, choose Merchant! --></errorMessage>

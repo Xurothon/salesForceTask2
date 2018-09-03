@@ -481,6 +481,15 @@
         <layout>BankAccount__c-Debit</layout>
         <recordType>BankAccount__c.Debit</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Card__c-Сard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Merchant__c-Merchant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Transaction__c-Transaction Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

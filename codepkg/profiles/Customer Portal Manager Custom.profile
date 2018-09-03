@@ -473,6 +473,18 @@
         <layout>Account-Law</layout>
         <recordType>Account.Law</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Card__c-Сard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Merchant__c-Merchant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Transaction__c-Transaction Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>

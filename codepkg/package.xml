@@ -7,6 +7,10 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
+        <members>*</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
         <members>Bank</members>
         <name>CustomApplication</name>
     </types>
@@ -53,6 +57,10 @@
     </types>
     <types>
         <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>GlobalValueSet</name>
     </types>
     <types>
@@ -68,6 +76,10 @@
         <members>Account-Law</members>
         <members>BankAccount__c-Credit</members>
         <members>BankAccount__c-Debit</members>
+        <members>Card__c-Сard Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Merchant__c-Merchant Layout</members>
+        <members>Transaction__c-Transaction Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -102,10 +114,6 @@
     <types>
         <members>*</members>
         <name>StandardValueSet</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
     </types>
     <version>43.0</version>
 </Package>
