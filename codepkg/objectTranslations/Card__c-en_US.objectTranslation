@@ -14,12 +14,24 @@
         <relationshipLabel><!-- Cards --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- BlockCheck --></label>
+        <name>BlockCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- BlockNormal --></label>
+        <name>BlockNormal__c</name>
+    </fields>
+    <fields>
         <label><!-- Сard Number --></label>
         <name>CardNumber__c</name>
     </fields>
     <fields>
         <label><!-- Is Active? --></label>
         <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid thru --></label>
+        <name>Valid_thru__c</name>
     </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

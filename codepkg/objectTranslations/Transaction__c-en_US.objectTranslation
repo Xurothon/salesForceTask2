@@ -36,6 +36,10 @@
         <relationshipLabel><!-- Transactions --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Get Email after transaction --></label>
+        <name>Get_Email_after_transaction__c</name>
+    </fields>
+    <fields>
         <label><!-- Merchant --></label>
         <name>Merchant__c</name>
         <relationshipLabel><!-- Transactions --></relationshipLabel>

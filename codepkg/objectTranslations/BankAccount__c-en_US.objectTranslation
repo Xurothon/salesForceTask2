@@ -22,6 +22,10 @@
         <name>BankAccountNumber__c</name>
     </fields>
     <fields>
+        <label><!-- Block --></label>
+        <name>Block__c</name>
+    </fields>
+    <fields>
         <label><!-- Debt in a month --></label>
         <name>Debt_in_a_month__c</name>
     </fields>

@@ -411,6 +411,10 @@
         <fields>NAME</fields>
         <relatedList>Transaction__c.Customer__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Overdraft__c.Customer_Lookup__c</relatedList>
+    </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

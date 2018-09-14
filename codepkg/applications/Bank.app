@@ -681,6 +681,7 @@
     <tabs>Card__c</tabs>
     <tabs>Transaction__c</tabs>
     <tabs>Merchant__c</tabs>
+    <tabs>Overdraft__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Bank_UtilityBar</utilityBar>
 </CustomApplication>
